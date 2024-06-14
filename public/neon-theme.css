@@ -1,0 +1,97 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    color: #e0e0e0;
+}
+
+.navbar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-brand, .nav-link {
+    color: #00ffcc !important;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ff66cc !important;
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc;
+}
+
+.btn {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff66cc, #ffcc33);
+    border-color: #ff66cc;
+    box-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #e60073, #e6b800);
+    border-color: #e60073;
+    box-shadow: 0 0 5px #e60073, 0 0 10px #e60073, 0 0 15px #e60073;
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #66ffcc, #33ccff);
+    border-color: #66ffcc;
+    box-shadow: 0 0 5px #66ffcc, 0 0 10px #66ffcc, 0 0 15px #66ffcc;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #33ff99, #00b3cc);
+    border-color: #33ff99;
+    box-shadow: 0 0 5px #33ff99, 0 0 10px #33ff99, 0 0 15px #33ff99;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ff4d4d, #ff99cc);
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff4d4d, 0 0 15px #ff4d4d;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #e60000, #e6739f);
+    border-color: #e60000;
+    box-shadow: 0 0 5px #e60000, 0 0 10px #e60000, 0 0 15px #e60000;
+}
+
+.form-control {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #e0e0e0;
+    box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
+}
+
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: #ff66cc;
+    color: #e0e0e0;
+    box-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 15px #00ffcc;
+}
+
+.card-title {
+    color: #ff66cc;
+}
+
+.embed-responsive {
+    border: 2px solid #ff66cc;
+}
+
+h2, h3 {
+    color: #66ffcc;
+    text-shadow: 0 0 5px #66ffcc, 0 0 10px #66ffcc, 0 0 15px #66ffcc;
+}

@@ -1,0 +1,74 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+.navbar, .btn {
+  background-color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+  color: #e0e0e0;
+}
+
+.navbar-brand {
+  color: #e0e0e0;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.card-title {
+  color: #ff66cc;
+}
+
+.btn-primary {
+  background-color: #ff66cc;
+  border-color: #ff66cc;
+}
+
+.btn-primary:hover {
+  background-color: #e60073;
+  border-color: #e60073;
+}
+
+.btn-secondary {
+  background-color: #66ffcc;
+  border-color: #66ffcc;
+}
+
+.btn-secondary:hover {
+  background-color: #33ff99;
+  border-color: #33ff99;
+}
+
+.btn-danger {
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+.btn-danger:hover {
+  background-color: #e60000;
+  border-color: #e60000;
+}
+
+.form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #e0e0e0;
+}
+
+.form-control:focus {
+  background-color: #1a1a1a;
+  border-color: #ff66cc;
+  color: #e0e0e0;
+}
+
+.embed-responsive {
+  border: 2px solid #ff66cc;
+}
+
+h2, h3 {
+  color: #66ffcc;
+}
