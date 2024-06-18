@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+/**
+ * This SearchMovies component allows users to search for movies and TV shows using the TMDB API.
+ * Users can filter search results by categories such as movies, TV shows, currently in theaters, on streaming services, or by genre.
+ * The component also provides functionality to save a movie/TV show to a watchlist or a custom list,
+ * and to fetch and display trailers from YouTube.
+ * The user's search results are displayed as cards with options to save or watch the trailer.
+ */
+
 const SearchMovies = () => {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
