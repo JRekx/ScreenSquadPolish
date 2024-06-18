@@ -2,7 +2,19 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
+/**
+ * Profile Component
+ *
+ * This React component displays the user's profile, including their saved movies,
+ * TV shows, and items they are currently watching. It allows users to update
+ * ratings, delete items, show trailers, and upload a profile picture. The component
+ * fetches the user's data and their saved media lists from the server and handles
+ * user authentication by redirecting to the login page if the token is not available.
+ */
+
 const Profile = () => {
+    // State variables to store user profile and various lists of saved media
     const [user, setUser] = useState(null);
     const [savedMovies, setSavedMovies] = useState([]);
     const [savedTVShows, setSavedTVShows] = useState([]);
@@ -11,6 +23,7 @@ const Profile = () => {
     const [profilePicture, setProfilePicture] = useState(null);
     const navigate = useNavigate();
 
+    // Fetch the user profile on component mount
     useEffect(() => {
         const fetchProfile = async () => {
             const token = localStorage.getItem('token');
@@ -30,6 +43,7 @@ const Profile = () => {
         fetchProfile();
     }, [navigate]);
 
+    // Fetch the list of saved movies on component mount
     useEffect(() => {
         const fetchSavedMovies = async () => {
             const token = localStorage.getItem('token');
@@ -47,6 +61,7 @@ const Profile = () => {
         fetchSavedMovies();
     }, []);
 
+    // Fetch the list of saved TV shows on component mount
     useEffect(() => {
         const fetchSavedTVShows = async () => {
             const token = localStorage.getItem('token');
@@ -64,6 +79,7 @@ const Profile = () => {
         fetchSavedTVShows();
     }, []);
 
+    // Fetch the list of items currently being watched on component mount
     useEffect(() => {
         const fetchWatching = async () => {
             const token = localStorage.getItem('token');
@@ -81,6 +97,7 @@ const Profile = () => {
         fetchWatching();
     }, []);
 
+    // Function to fetch and display the trailer for a given movie or TV show
     const showTrailer = async (id, type) => {
         try {
             const res = await axios.get(`https://api.themoviedb.org/3/${type}/${id}/videos?api_key=0603d4df389e281cd4338b1fb04ca1b5`);
@@ -95,6 +112,7 @@ const Profile = () => {
         }
     };
 
+    // Function to delete a saved movie, TV show, or currently watching item
     const deleteItem = async (id, type) => {
         const token = localStorage.getItem('token');
         try {
@@ -116,6 +134,7 @@ const Profile = () => {
         }
     };
 
+    // Function to update the rating of a saved movie, TV show, or currently watching item
     const updateRating = async (id, rating, type) => {
         const token = localStorage.getItem('token');
         try {
@@ -146,6 +165,7 @@ const Profile = () => {
         }
     };
 
+    // Function to upload a new profile picture
     const uploadProfilePicture = async (e) => {
         e.preventDefault();
         const token = localStorage.getItem('token');
@@ -167,6 +187,7 @@ const Profile = () => {
         }
     };
 
+    // JSX structure of the profile page
     return (
         <div className="container">
             {user ? (
