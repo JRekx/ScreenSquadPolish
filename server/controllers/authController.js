@@ -1,9 +1,34 @@
+
+/**
+ * User Controller Module
+ *
+ * This module handles user-related operations including:
+ * - Uploading profile pictures
+ * - User registration
+ * - User login
+ * - Retrieving user profile
+ * - Saving movies, TV shows, and watching items
+ * - Retrieving saved movies, TV shows, and watching items
+ * - Updating ratings for movies, TV shows, and watching items
+ * - Deleting movies, TV shows, and watching items
+ *
+ * Dependencies:
+ * - `bcryptjs`: For hashing passwords
+ * - `jsonwebtoken`: For generating and verifying JWT tokens
+ * - `multer`: For handling file uploads
+ * - `path`: For file and directory path operations
+ * - `fs`: For file system operations
+ * - `../models/userModel`: Database connection pool
+ */
+
 const pool = require('../models/userModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+
+
 
 // Ensure the uploads directory exists
 const uploadDir = path.join(__dirname, '..', 'uploads');
