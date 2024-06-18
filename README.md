@@ -108,6 +108,9 @@ JWT_SECRET=your_jwt_secret
 Start the development server:
 npm run dev
 
+Start Client
+Npm start 
+
 
 Usage
 Register a new account:
