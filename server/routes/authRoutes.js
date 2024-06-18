@@ -1,3 +1,16 @@
+/**
+ * @file routes/authRoutes.js
+ * @description This file contains the routing definitions for user authentication and content management
+ * including registration, login, profile management, and saving/deleting/updating movies, TV shows, 
+ * and watching lists for users. It uses Express.js for handling HTTP requests and relies on an 
+ * authentication middleware to protect certain routes.
+ * 
+ * @requires express
+ * @requires ../controllers/authController
+ * @requires ../middleware/authMiddleware
+ */
+
+
 const express = require('express');
 const { 
     register, 
